@@ -127,4 +127,11 @@ module aptos_nft::aptos_nft {
         vector::reverse<u8>(&mut vec_data);
         vec_data
     }
+
+    public fun get_token_URI(): String {
+        string::utf8(COLLECTION_URI)
+    }
+
+        
+
 }
