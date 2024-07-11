@@ -1,5 +1,5 @@
 [package]
-name = 'aptos_nft'
+name = 'aptos_asset'
 version = '1.0.0'
 
 [dependencies]
@@ -10,7 +10,7 @@ AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", subd
 
 
 [addresses]
-aptos_nft = "0xb56b9bff5bfa5732a8e9ea0b5e89392a52a60e48eeb1b159ccd2d2193e6adcd0"
+aptos_asset = "0x4af27a75e675cbb08926330579be65a9c03ac16cf2f16172efb1b06683a360bd"
 std = "0x1"
 aptos_std = "0x1"
 aptos_framework = "0x1"

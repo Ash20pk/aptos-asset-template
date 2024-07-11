@@ -1,4 +1,4 @@
-module aptos_nft::aptos_nft {
+module aptos_asset::nft {
     use aptos_framework::account::{Self, SignerCapability};
     use aptos_framework::event;
     use aptos_framework::object;
@@ -56,7 +56,7 @@ module aptos_nft::aptos_nft {
     }
 
     fun get_token_signer(): signer acquires CollectionCapability {
-        account::create_signer_with_capability(&borrow_global<CollectionCapability>(@aptos_nft).capability)
+        account::create_signer_with_capability(&borrow_global<CollectionCapability>(@aptos_asset).capability)
     }
 
     // Create the collection that will hold all the NFTs
@@ -81,7 +81,7 @@ module aptos_nft::aptos_nft {
         let description = string::utf8(COLLECTION_DESCRIPTION);
         let user_addr = address_of(user);
         let token_name = string::utf8(b"Shore ID");
-        let mint_info = borrow_global_mut<MintInfo>(@aptos_nft);
+        let mint_info = borrow_global_mut<MintInfo>(@aptos_asset);
         let count = mint_info.count;
         let next_count = count + 1;
         string::append( &mut token_name, utf8(b" #"));
