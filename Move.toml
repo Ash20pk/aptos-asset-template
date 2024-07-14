@@ -10,7 +10,7 @@ AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", subd
 
 
 [addresses]
-aptos_asset = "0x4af27a75e675cbb08926330579be65a9c03ac16cf2f16172efb1b06683a360bd"
+aptos_asset = "0x01130def0d6d59c51df55b2f7f7485cf0951ef2894283109e60e49fec80b4e21"
 std = "0x1"
 aptos_std = "0x1"
 aptos_framework = "0x1"
